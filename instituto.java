@@ -1,9 +1,11 @@
+//Clase de Instituto con los atributos nombre, ciudad, codigo y clases
 public class Instituto {
     String nombre;
     String ciudad;
     String codigo;
     int clases;
 
+    //Constructor que recibe como parámetros los atributos indicados en la clase Instituto
     public Instituto(String nombre, String ciudad, String codigo, int clases) {
         this.nombre = nombre;
         this.ciudad = ciudad;
@@ -11,6 +13,7 @@ public class Instituto {
         this.clases = clases;
     }
 
+    //Métodos Setters y Getters de los atributos
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
@@ -44,11 +47,15 @@ public class Instituto {
         return clases;
     }
 
-    public String cambiarNombre(String nombre) {
-        return nombre = "IES Al-mudeyne";
+    //Método para cambiar el nombre del instituto
+    public String cambiarNombre(String nombreNuevo) {
+        this.nombre = nombreNuevo;
+        return nombre;
     }
 
-    public int cambiarNumClases(int clases) {
-        return clases = 120;
+    //Método para cambiar el número de clases del instituto
+    public int cambiarNumClases(int numClases) {
+        this.clases = numClases;
+        return clases;
     }
 }

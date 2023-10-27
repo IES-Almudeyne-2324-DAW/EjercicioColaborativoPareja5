@@ -5,7 +5,8 @@ public class Instituto {
     String codigo;
     int clases;
 
-    //Constructor que recibe como parámetros los atributos indicados en la clase Instituto
+    // Constructor que recibe como parámetros los atributos indicados en la clase
+    // Instituto
     public Instituto(String nombre, String ciudad, String codigo, int clases) {
         this.nombre = nombre;
         this.ciudad = ciudad;
@@ -13,7 +14,7 @@ public class Instituto {
         this.clases = clases;
     }
 
-    //Métodos Setters y Getters de los atributos
+    // Métodos Setters y Getters de los atributos
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
@@ -30,10 +31,16 @@ public class Instituto {
         this.clases = clases;
     }
 
-    //getters
+    // getters
+
     public String getNombre() {
         return nombre;
     }
+
+    /*
+     * @return
+     * @param
+     */
 
     public String getCiudad() {
         return ciudad;
@@ -43,17 +50,22 @@ public class Instituto {
         return codigo;
     }
 
-    public String getClases() {
+    /*
+    * @return
+    * @param 
+    */
+
+    public int getClases() {
         return clases;
     }
 
-    //Método para cambiar el nombre del instituto
+    // Método para cambiar el nombre del instituto
     public String cambiarNombre(String nombreNuevo) {
         this.nombre = nombreNuevo;
         return nombre;
     }
 
-    //Método para cambiar el número de clases del instituto
+    // Método para cambiar el número de clases del instituto
     public int cambiarNumClases(int numClases) {
         this.clases = numClases;
         return clases;
